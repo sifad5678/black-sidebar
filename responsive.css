@@ -1,0 +1,41 @@
+
+
+
+
+
+
+@media (max-width:768px){
+    .section-wrap{
+        display: block;
+        overflow: hidden;
+    }
+    .section-wrap .box-small{
+        width: 48%;
+        margin: 0;
+        float: left;
+        margin-bottom: 4vh;
+
+
+    }
+    .section-wrap .box-small:first-child{
+        margin-right: 4%;
+    }
+    .section-wrap .box-small:nth-child(3){
+        margin-right: 4%;
+    }
+    
+
+} 
+@media (max-width:692px) {
+    .header-content .search{
+        padding: 0;
+        padding-left: 10px;
+    }
+    .header-content .socials{
+        padding: 0 10px;
+    }
+    .header-content .socials i{
+        min-width: 30px;
+    }
+    
+}

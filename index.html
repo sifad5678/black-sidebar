@@ -6,32 +6,32 @@
     <title>Sidebar Tutorial</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
-    <!-- js link  -->
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="jsCss.css">
     <!-- box icon link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="sidebar">
-        <div class="top">
-            <div class="logo">
-                <i class="bx bxl-codepen"></i>
-                <span>WS SiFAD</span>
-            </div>
-            <i class="bx bx-menu" id="btn"></i>
-        </div>
+        <!-- sidebar top logo content  -->
         <div class="user">
             <img src="images/logo-tree.png" alt="logo">
             <div>
-                <p class="bold">Clint B.</p>
-                <p>Admin</p>
+                <p class="bold">SiFAD.</p>
+                <p>Web Designer</p>
             </div>
         </div>
+
+
+
+
+        <!-- sidebar navigation list start here  -->
         <ul>
             <li>
                 <a href="#">
                     <i class="bx bxs-grid-alt"></i>
                     <span class="nav-item">Dashboard</span>
+                    <i class='bx bx-chevron-right' ></i>
                 </a>
                 <!-- <span class="tooltip">Dashboard</span> -->
             </li>
@@ -39,55 +39,130 @@
                 <a href="#">
                     <i class="bx bxs-shopping-bag"></i>
                     <span class="nav-item">Product</span>
-                </a>
-                <!-- <span class="tooltip">Product</span> -->
-            </li>
-            <li>
-                <a href="#">
-                    <i class="bx bxs-cog"></i>
-                    <span class="nav-item">Setting</span>
-                </a>
-                <!-- <span class="tooltip">Setting</span> -->
-            </li>
-            <li>
-                <a href="#">
-                    <i class="bx bx-log-out"></i>
-                    <span class="nav-item">Log Out</span>
-                </a>
-                <!-- <span class="tooltip">Log Out</span> -->
-            </li>
-        </ul>
-    </div>
+                    <i class='bx bx-chevron-right' ></i>
+                    </a>
+                    <!-- <span class="tooltip">Product</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bxs-cog"></i>
+                        <span class="nav-item">Setting</span>
+                        <i class='bx bx-chevron-right' ></i>
+                    </a>
+                    <!-- <span class="tooltip">Setting</span> -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-log-out"></i>
+                        <span class="nav-item">Log Out</span>
+                    </a>
+                    <!-- <span class="tooltip">Log Out</span> -->
+                </li>
+            </ul>
 
+            <!-- dark mode light mode part -->
+            <div class="bottom-content">
 
-    <div class="main-content">
-        <div class="container">
+                <i class='bx bxs-toggle-right kalo' id="darkBtn"></i>
+                <span class="nav-item">Switch Mode</span>
+                
+            </div>
+        <!-- sidebar navigation list end here  -->
+        
+        
+        <div class="main-content">
+            <div class="container">
             <header class="header-content">
+                <!-- search area and menu button start -->
                 <div class="search">
-                    <i class='bx bx-search' ></i>
+                    <!-- button -->
+                    <i class="bx bx-menu" id="btn"></i>
+                    
+                    
+                    
                     <input type="search" placeholder="Search...">
+                    <i class='bx bx-search' ></i>
                 </div>
+                <!-- search area and menu button end -->
+
+
+                <!-- header communication part start  -->
                 <div class="socials">
                     <div class="socials-icon">
-                        <i class='bx bxl-facebook-circle' ></i>
-                        <i class='bx bxl-linkedin-square' ></i>
-                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxs-chat' ></i>
+                        <i class='bx bxs-grid-alt' ></i>
+                        <i class='bx bx-bell'></i>
                     </div>
-                    <img src="images/sifad-photo.jpeg"width="80px" alt="">
+                    <div class="select-menu">
+                        <div class="image-content">
+                            <img src="images/sifad-photo.jpeg"width="80px" alt="">
+                        </div>
+                        <ul class="options">
+                            <li class="option">
+                                <span> <i class='bx bxs-user-check' ></i> My Account</span>
+                            </li>
+                            <li class="option">
+                                <span><i class='bx bxs-cog' ></i> Setting</span>
+                            </li>
+                            <li class="option">
+                                <span> <i class='bx bx-log-out' ></i> Log Out</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- header communication part end  -->
             </header>
+            
+            <!-- body content start -->
+            <div id="body-part">
+                <div class="container">
+                    <section>
+                        <div class="section-wrap">
+                            <div class="box-small"></div>
+                            <div class="box-small"></div>
+                            <div class="box-small"></div>
+                            <div class="box-small"></div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section-wrap">
+                            <div class="box-big"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- body content end -->
         </div>
     </div>
 </body>
 
 
+    <!-- js link  -->
+    <script src="script.js"></script>
 <script>
-    let btn = document.querySelector('#btn');
-    let sidebar = document.querySelector('.sidebar');
 
+    //button 2
+    // let btn2 = document.querySelector('#btn2');
+    // let mainContent = document.querySelector('.main-content');
+    // let currMode = 'light';
+    // btn2.addEventListener = ()=>{
+    //     if(currMode === 'light'){
+    //         currMode = 'dark';
+    //         // mainContent.classList.add('dark')
+    //     }
+    //     else{
+    //         currMode = 'light'
+
+    //     }
+    //     console.log(currMode);
+    // }
+
+    // button 1
+    let btn = document.querySelector('#btn');
+    let sidebarFirst = document.querySelector('.sidebar');
 
     btn.onclick = function (){
-        sidebar.classList.toggle('active')
+        sidebarFirst.classList.toggle('active')
     }
 </script>
 </html>

@@ -1,0 +1,76 @@
+
+
+/* dark and white codes are here  */
+
+.light{
+    background-color: white;
+    color: black;
+}
+.light.header-content .search input{
+    color: black;
+    background-color: #efefef;
+}
+.light.header-content .search input::placeholder{
+    color: black;
+}
+.light.sidebar ul li a{
+    color: black;
+}
+.light.sidebar #btn{
+    color: black;
+}
+.light #darkBtn{
+    color: black;
+}
+.dark{
+    background-color: #202833fd;
+    color: white;
+}
+
+#darkBtn{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 250px;
+
+}
+.bottom-content i{
+    min-width: 50px;
+    text-align: center;
+}
+.active.bottom-content i{
+    margin-left: 0;
+}
+
+/* hovers */
+.light.header-content .socials i:hover{
+    color: white;
+    background-color: #12171e;
+}
+.light.sidebar ul li a:hover{
+    
+    color: white;
+    background-color: #12171e;
+}
+.sidebar .bottom-content .nav-item{
+    color: white;
+}
+.light .bottom-content .nav-item{
+    color: black;
+}
+.light.sidebar ~ .main-content{
+    background-color: rgb(228, 228, 228);
+}
+.light.sidebar .user p,
+.light.sidebar .bold{
+    color: black;
+}
+.light .box-small{
+    background-color: white;
+}
+
